@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/85ec8c1f71.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<div class="header">
+
+<a class="logo" href="#">IfraneCity</a>
+<div class="nav">
+<a  href="#">Home</a>
+<a href="#go">About</a>
+<a  href="#travelgo">Travel</a>
+<a id="login" href="#">Login</a>
+</div>
+
+<div class="nav2">
+<div class="dropdown">
+  <button onclick="myFunction2()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a  href="#">Home</a>
+    <a href="#go">About</a>
+    <a  href="#travelgo">Travel</a>
+  </div>
+</div>
+</div>
+</div>
+
+    
+<section>
+<div class="container">
+<h2>Ifrane The Most Beautiful Traditionnel City</h2>
+    <p id="ptop">is a city in the Middle Atlas region of northern Morocco</p>
+<div class="section-info">
+    
+<div class="insideleftcenter">
+    
+<div class="cityleft">
+
+<h2>What's the best suggesion for you?</h2>
+
+
+<div class="souschoices">
+
+
+  <div class="leftsous">
+    <div class="leftoo">
+      <div class="butchoice">
+        <a id="choices1" href="#go">Traveler</a>
+      </div>
+      <img id="travellogo" src="https://www.hostinger.com/assets/images/homepage2020/control-panel-section/user-icon-923934a391.svg">
+      <p>Most Attractive places</p>
+      <p>Snow Magic Experience</p>
+      <p>Best Hotels & Restaurants</p>
+    </div>
+
+    &nbsp;	&nbsp;
+    <div class="rightoo">
+      <div class="butchoice">
+        <a id="choices" href="#">Investor</a>
+      </div>
+      <img id="investlogo" src="https://www.hostinger.com/assets/images/homepage2020/control-panel-section/chart-icon-3472a5b9a8.svg">
+      <p>Tourism advantages</p>
+      <p>Excellent workforce</p>
+      <p>Hotels Big Opportunities</p>
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+    
+</div>
+    
+<div class="cityright">
+
+  <div class="slideContainer">
+    <div class="Slide">
+    <img class="imgslid" src="Ifrane2.jpg" />
+
+    </div>
+    <div class="Slide">
+    <img class="imgslid" src="ifran3.jpg" />
+ 
+    </div>
+    <div class="Slide">
+    <img class="imgslid" src="ifran7.jpg" />
+
+    </div>
+    <a class="prevBtn">&#10094;</a>
+    <a class="nextBtn">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align:center">
+    <span class="Navdot" onclick="currentSlide(1)"></span>
+    <span class="Navdot" onclick="currentSlide(2)"></span>
+    <span class="Navdot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+    document.querySelector(".prevBtn").addEventListener("click", () => {
+    changeSlides(-1);
+    });
+    document.querySelector(".nextBtn").addEventListener("click", () => {
+    changeSlides(1);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlides(n) {
+    showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+    showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("Slide");
+    var dots = document.getElementsByClassName("Navdot");
+    if (n > slides.length) {
+    slideIndex = 1;
+    }
+    if (n < 1) {
+    slideIndex = slides.length;
+    }
+    Array.from(slides).forEach(item => (item.style.display = "none"));
+    Array.from(dots).forEach(
+    item => (item.className = item.className.replace(" selected", ""))
+    );
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " selected";
+    }
+    </script>
+
+</div>
+
+
+
+    
+</div>
+</div>
+    
+</section>  
+
+
+  <div class="container2">
+    <h2>Ifran City Said: Thank you for decide to visit me </h2>
+    <p id="ptop">Know More About me</p>
+  </div>
+
+  <section class="section2">
+  <div class="main">
+    <h2 id="go">Best Places To See In Ifran</h2>
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="ifran5.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">The Ifrane National Park</h2>
+            <p class="card_text">The park offers an experience to its visitors to see wolves, wild pigs, and various rodent species. Besides, there are diverse bird species in the park.</p>
+
+          </div>
+          <button class="btn card_btn">
+            <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</button>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="ifran7.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">See the Large Lion Sculpture</h2>
+            <p class="card_text">The Lion Sculpture is one of Ifrane’s most photographed landmarks. The sculpture was carved during the Second World War by a German soldier.</p>
+
+          </div>
+                      <button class="btn card_btn">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </button>
+        </div>
+      </li>
+
+
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="ifran (1).jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Skiing at Michlifen Ski Resort</h2>
+            <p class="card_text">Activities like skiing, sledding, and snowboarding are popular at Michlifen Ski Resort, during the winter season. Visitors can enjoy playing in the snow.</p>
+
+          </div>
+                      <button class="btn card_btn">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </button>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+
+
+<!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+
+<div class="section-info2">
+    
+  <div class="insideleftcenter2">
+      
+  <div class="cityleft2">
+  
+  <h1>Ifrane natural version</h1>
+  <p>Do you dream of getting away from it all in the heart of nature? In Ifrane, experience a real moment of change of scenery thanks to the richness of its natural sites: practice agritourism, observe its unique flora and fauna, relax on the shores of large lakes such as Dayet Aoua.</p>
+  <p>What if you decide to organize a one-of-a-kind picnic! Take a tour of the natural sites near Ifrane. Lakes, springs, waterfalls and forests are as many places as they are relaxing experiences. The Atlas cedar is majestic: the cedar that grows there is endemic to Morocco.</p>
+  <p>In winter, the Michlifen or Jbel Hibri ski resort will leave you with indelible memories! Skiing, sledding or just a snowman, get ready to experience unforgettable moments!</p>
+
+
+<div class="button">
+  <a href="https://www.tripadvisor.fr/Tourism-g298350-Ifrane_Fes_Meknes-Vacations.html" target="_blank" id="travelgo">
+    Visit&nbsp;Ifrane&nbsp;Now
+    <span class="shift">›</span>
+  </a>
+  <div class="mask"></div>
+</div>
+
+  
+
+  
+  </div>
+      
+  </div>
+      
+  <div class="cityright2">
+  
+    <div class="slideContainer2">
+        
+ 
+      <img class="imgslid2" src="ifranmap.jpg" />
+ 
+  
+  
+      </div>
+  
+  
+  
+  </div>
+
+</div>
+
+
+</section>
+
+
+<!-- /////////////////////////////////////////////////// -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+
+  <div class="modal-content">
+    <span id="closeit" class="close">&times;</span>
+
+    <!-- ////////////////////// -->
+
+    <div class="section-info3">
+    
+      <div class="insideleftcenter3">
+          
+      <div class="cityleft3">
+      
+  
+        <img class="imgslid3" src="https://pingboard.com/blog/wp-content/uploads/2019/05/Types-of-Business-Organizational-Structures-1024x810.png" />
+    
+      
+    
+      
+      </div>
+          
+      </div>
+          
+      <div class="cityright3">
+      
+        <div class="slideContainer3">
+            
+     <h2 id="new">This is a Prumium Content Please Sign Up To Unlock it</h2>
+
+<br>
+     <div class="form-style-2">
+      <div class="form-style-2-heading">Provide your information</div>
+      <form action="" method="post">
+      <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" id="input1" required/></label>
+      <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" required/></label>
+      <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
+      <option value="General Question">Man</option>
+      <option value="Advertise">Woman</option>
+      </select></label>
+     
+      <label for="field1"><span>Password <span class="required">*</span></span><input type="password" class="input-field" name="field1" value="" required/></label>
+
+      <label><span> </span><input type="button"  onclick="myFunction()" value="Submit" /></label>
+      </form>
+      </div>
+     <br>
+      
+      
+          </div>
+      
+      
+      
+      </div>
+    
+    </div>
+
+<!-- /////////////////////// -->
+
+
+
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("choices");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- ===========================Prumium Section======================== -->
+
+<script>
+  function myFunction() {
+      var text1 = document.getElementById("input1").value;
+      document.getElementById("lockedcontent").style.display = "flex";
+      document.getElementById('result').scrollIntoView({
+  behavior: 'smooth'
+});
+      document.getElementById("closeit").click();
+      document.getElementById("result").innerHTML = "<div id='divlock'><b id='congrutulation'>Congrutulations!!</b> &nbsp;"+text1 +"&nbsp; You are unlocked This Prumium Content <hr></div>";
+    
+    // document.getElementById("result1").innerHTML = "<a href='javascript:window.print()'><img src='https://i1.wp.com/css-tricks.com/wp-content/uploads/2007/11/click-here-to-print.jpg'  id='but' /></a>";
+  }
+</script>
+
+
+<section class="section2">
+<div><h1 id="result"></h1></div>
+
+<div class="section-info4" id="lockedcontent">
+    
+  <div class="insideleftcenter4">
+      
+  <div class="cityleft4">
+  
+    <img class="imgslid4" src="tothetop.jpg" />
+  </div>
+      
+  </div>
+      
+  <div class="cityright4">
+  
+    <div class="slideContainer4">
+        
+
+      <h2 id="whyinvest">Why Will I Invest in Ifrane?</h2>
+      <h3>Here are the top 4 reasons to invest in Ifrane</h3>
+      <p><b>The number of tourists</b> in the city of Ifrane exceeds one million visitors annually, in addition to its estimated population of 73,782 people</p>
+      <p><b>Al Akhawayn University:</b> Normally the campus is closed to non-students, but there are occasional events that allow visitors to see the campus. You can also request special permission from the faculty</p>
+  <p><b>Centre-ville:</b> The newer part of the city. Here, you can find the center for tourism, the iconic Lion. statue that many tourists like to take pictures next to, the lake and park, and a number of restaurants, cafes, and convenience stores.</p>
+  <p><b>Marché:</b> The marché or souq, open every day, is where the locals buy their supplies. Anything from books and electronics to meat and fruit can be bought here. There are also many restaurants of varying quality and price.</p>
+
+<h3></h3>
+
+  
+      </div>
+  
+  
+  
+  </div>
+
+</div>
+
+</section>
+
+<div class="h2goo">
+<h2 class="made_by">Made with <i class="fa fa-heart" aria-hidden="true"></i> By Abdellah Mourig</h2>
+</div>
+</body>
+</html>

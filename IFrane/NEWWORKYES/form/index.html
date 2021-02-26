@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Daily UI 001 Sign Up Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="impression.css" media="print">
+  
+</head>
+
+<body>
+   
+
+<script>
+    function myFunction() {
+        var text1 = document.getElementById("input1").value;
+        var text2 = document.getElementById("input2").value;
+
+        console.log(typeof text1);
+    
+    
+        document.getElementById("result").innerHTML += "<div id='out1'> <b>Your Full Name Is</b>: 	&nbsp;	" +text1+ "	&nbsp;" +text2+ "</div> <br><hr>";
+      
+      document.getElementById("result1").innerHTML = "<a href='javascript:window.print()'><img src='https://i1.wp.com/css-tricks.com/wp-content/uploads/2007/11/click-here-to-print.jpg'  id='but' /></a>";
+    }
+</script>
+
+
+  <div class="signupSection">
+
+
+    <h2>Sign Up</h2>
+    <ul class="noBullet">
+      <li>
+        <label for="username"></label>
+        <input type="text" class="inputFields" id="input1"  placeholder="Prenom"  required/>
+      </li>
+      <li>
+        <label for="password"></label>
+        <input type="text" class="inputFields" id="input2"  placeholder="Nom"  required/>
+      </li>
+      <li>
+
+      <li id="center-btn">
+        <input onclick="myFunction()" type="button" id="join-btn" value="Submit">
+      </li>
+    </ul>
+
+</div>
+    <div class="info">
+    <p>Your Informations</p>
+	<hr>
+	<div id="result">
+   
+
+	 </div>
+		     <p id="result1"></p>
+	 </div>
+
+
+</body>
+</html>

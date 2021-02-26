@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<a class="logo" href="#">IfraneCity</a>
+<div class="nav">
+<a  href="#">Home</a>
+<a href="#">Shop</a>
+<a  href="#">Try it</a>
+
+<a id="login" href="#">Login</a>
+
+</div>
+</div>
+
+    
+<section>
+<div class="container">
+<h2>Ifrane The Most Beautiful Traditionnel City</h2>
+    <p id="ptop">is a city in the Middle Atlas region of northern Morocco</p>
+<div class="section-info">
+    
+<div class="insideleftcenter">
+    
+<div class="cityleft">
+
+<h2>What's the best suggesion for you?</h2>
+
+
+<div class="souschoices">
+
+
+  <div class="leftsous">
+    <div class="leftoo">
+      <div class="butchoice">
+        <a id="choices1" href="#go">Traveler</a>
+      </div>
+      <img id="travellogo" src="https://www.hostinger.com/assets/images/homepage2020/control-panel-section/user-icon-923934a391.svg">
+      <p>Most Attractive places</p>
+      <p>Lorem ipsum dolor</p>
+      <p>Lorem ipsum dolor</p>
+    </div>
+
+    &nbsp;	&nbsp;
+    <div class="rightoo">
+      <div class="butchoice">
+        <a id="choices" href="#">Investor</a>
+      </div>
+      <img id="investlogo" src="https://www.hostinger.com/assets/images/homepage2020/control-panel-section/chart-icon-3472a5b9a8.svg">
+      <p>Tourism advantages</p>
+      <p>Excellent workforce</p>
+      <p>Hotels Big Opportunities</p>
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+  
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("choices");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+</div>
+    
+</div>
+    
+<div class="cityright">
+
+  <div class="slideContainer">
+    <div class="Slide">
+    <img class="imgslid" src="https://images.pexels.com/photos/3540375/pexels-photo-3540375.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+    <div class="Caption">Photo 1</div>
+    </div>
+    <div class="Slide">
+    <img class="imgslid" src="https://images.unsplash.com/photo-1558981001-5864b3250a69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" />
+    <div class="Caption">Photo 2</div>
+    </div>
+    <div class="Slide">
+    <img class="imgslid" src="https://images.unsplash.com/photo-1584910758141-f7993f9e203d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" />
+    <div class="Caption">Photo 3</div>
+    </div>
+    <a class="prevBtn">&#10094;</a>
+    <a class="nextBtn">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align:center">
+    <span class="Navdot" onclick="currentSlide(1)"></span>
+    <span class="Navdot" onclick="currentSlide(2)"></span>
+    <span class="Navdot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+    document.querySelector(".prevBtn").addEventListener("click", () => {
+    changeSlides(-1);
+    });
+    document.querySelector(".nextBtn").addEventListener("click", () => {
+    changeSlides(1);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlides(n) {
+    showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+    showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("Slide");
+    var dots = document.getElementsByClassName("Navdot");
+    if (n > slides.length) {
+    slideIndex = 1;
+    }
+    if (n < 1) {
+    slideIndex = slides.length;
+    }
+    Array.from(slides).forEach(item => (item.style.display = "none"));
+    Array.from(dots).forEach(
+    item => (item.className = item.className.replace(" selected", ""))
+    );
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " selected";
+    }
+    </script>
+
+</div>
+
+
+
+    
+</div>
+</div>
+    
+</section>  
+
+
+  <div class="container2">
+    <h2>Ifran City Said: Thank you for decide to visit me </h2>
+    <p id="ptop">Know More About me</p>
+  </div>
+
+  <section class="section2">
+  <div class="main">
+    <h2 id="go">Best Places To See In Ifran</h2>
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://images.memphistours.com/large/be77825d82b3e364bf351019e5c22b6d.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">The Ifrane National Park</h2>
+            <p class="card_text">The park offers an experience to its visitors to see wolves, wild pigs, and various rodent species. Besides, there are diverse bird species in the park.</p>
+
+          </div>
+          <button class="btn card_btn">
+            <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</button>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://s3.amazonaws.com/files.superdeal.ma/deals/voyages/27387/large_img3_20180205090818.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">See the Large Lion Sculpture</h2>
+            <p class="card_text">The Lion Sculpture is one of Ifrane’s most photographed landmarks. The sculpture was carved during the Second World War by a German soldier.</p>
+
+          </div>
+                      <button class="btn card_btn">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </button>
+        </div>
+      </li>
+
+
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://static.travelweekly.com/i/sized/780/437/www.cfmedia.vfmleonardo.com/imageRepo/7/0/129/941/198/General_06082020_O.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Skiing at Michlifen Ski Resort</h2>
+            <p class="card_text">Activities like skiing, sledding, and snowboarding are popular at Michlifen Ski Resort, during the winter season. Visitors can enjoy playing in the snow.</p>
+
+          </div>
+                      <button class="btn card_btn">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </button>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- <h2>Why Visiting Ifrane</h2>
+<div class="textimg">
+
+  <div class="textarea">
+    <p id="textarea"><strong>The design</strong>&nbsp;of Ifrane is similar to the garden city model, which was a fashion between the two world wars, Ifrane has a unique designs, different from Moroccan desert cities, these designs, parks, streets and hospitality makes you feel like you are on other planet, in addition to all that, there are many of things you can do in this great city!!</p>
+  </div>
+
+  <div class="imgarea">
+    <img src="https://static.travelweekly.com/i/sized/780/437/www.cfmedia.vfmleonardo.com/imageRepo/7/0/129/941/198/General_06082020_O.jpg">
+    width
+  </div> -->
+
+
+<!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+
+<div class="section-info2">
+    
+  <div class="insideleftcenter2">
+      
+  <div class="cityleft2">
+  
+  <h2>What's the best suggesion for you?</h2>
+  <p>The design of Ifrane is similar to the garden city model, which was a fashion between the two world wars, Ifrane has a unique designs, different from Moroccan desert cities, these designs, parks, streets and hospitality makes you feel like you are on other planet addition to all that, there are many of things you can do in this great city!!</p>
+  
+  
+  
+  <!--
+  <div class="souschoices">
+  
+  
+    <div class="leftsous">
+  
+  
+  </div>
+  
+  
+  </div>
+  -->
+  
+
+  
+  </div>
+      
+  </div>
+      
+  <div class="cityright2">
+  
+    <div class="slideContainer2">
+        
+ 
+      <img class="imgslid2" src="https://whereismap.net/wp-content/uploads/2019/12/Where-is-Ifrane-Located-What-Country-is-Ifrane-in-Ifrane-Map.jpg" />
+ 
+  
+  
+      </div>
+  
+  
+  
+  </div>
+
+  <!--hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh  -->
+</div>
+
+
+</section>
+
+
+<h2 class="made_by">Made with ♡ By Abdellah Mourig</h2>
+</body>
+</html>

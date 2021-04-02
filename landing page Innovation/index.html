@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="header">
+    <div id="nav">
+    
+    <span id="leftspan"><img src="icon.png" width="40px"></span>
+    <p id="logo">Hawl</p>
+    <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Feature</a></li>
+        <li><a href="">Tools</a></li>
+        <li><a href="">Pricing</a></li>
+    </ul>
+</div>
+<div class="rightnav">
+<p id="endlogo">Showcase</p>
+<span id="rightspan"><img src="righticon.png" id="righticonimg" width="40px"></span>
+</div>
+</div>
+
+
+<div class="container">
+
+<div class="left">
+<h1 id="firstH1">Inn<span><img src="startO.png" id="starO"></span>vation</h1>
+<h1>Solution</h1>
+<p id="sousLeft">We greatly simplify the process for client and for the consumer without unnecessary resources</p>
+<div class="actionDiv">
+<a href="" id="actionButton">Book Now</a>
+</div>
+
+<div class="storeDiv">
+    <a href="" id="playstore">
+        <span id="spanOfPlay"><img src="playStore.png" id="playIcon"></span>
+        <div id="divTextPlay">
+        <p id="playTop">Get it on</p>
+        <p id="playBottom">Google Play</p>
+        </div>
+    </a>
+
+    <a href="" id="playstore">
+        <span id="spanOfPlay"><img src="appleStore.png" id="playIcon"></span>
+        <div id="divTextPlay">
+        <p id="playTop">Get it on</p>
+        <p id="playBottom">Google Play</p>
+        </div>
+    </a>
+
+</div>
+
+</div>
+
+<div class="right">
+    <img src="rightimg.png"  id="appImage">
+</div>
+
+</div>
+
+<script>
+    let imgApp = document.querySelector('.right')
+
+       setInterval(()=>{
+        var rect = imgApp.getBoundingClientRect();
+            y = rect.top;
+            // console.log(y)
+            if (y<330) {
+                document.getElementById('appImage').setAttribute('style', 'display:block');
+            }else{
+                document.getElementById('appImage').setAttribute('style', 'display:none');
+            }
+       },1000)
+
+    
+
+
+</script>
+
+</body>
+</html>

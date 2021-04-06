@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stagiers Certificate Print</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='print' href='imp.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.css" />
+
+    <style>
+        .xd-content .xd-body .xd-body-inner {
+            max-height: unset;
+        }
+
+        .xd-content .xd-body p {
+            color: #734caf;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+
+        .xd-content .xd-button.xd-ok {
+            background: #734caf;
+        }
+
+        .form::-webkit-scrollbar {
+            width: 10px;
+            height: 50vh;
+            background: #ffffff;
+        }
+
+        .form::-webkit-scrollbar-thumb {
+            background: #d1d1d1;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="yeh"></ul>
+    <div id="yeh2"></div>
+
+    <div class="container">
+        <div class="left">
+            <img src="img.png" alt="" class="imgLeft">
+        </div>
+
+        <div class="right">
+            <div class="header">
+
+                <div class="but1">
+                    <div class="checked1">
+                        <p class="spanChecked">*</p>
+                    </div>
+                    <a class="headerBut" id="signUpButton">Sign Up</a>
+                </div>
+
+                <div class="but2">
+                    <div class="checked2">
+                        <p class="spanChecked">*</p>
+                    </div>
+                    <a class="headerBut" id="loginButton">Login</a>
+                </div>
+
+
+
+
+                <div class="but3">
+                    <div class="checked3">
+                        <p class="spanChecked">*</p>
+                    </div>
+                    <a class="headerBut" id="ListStagiersButton">List Stagiers</a>
+                </div>
+
+
+                <div class="but4">
+                    <div class="checked4">
+                        <p class="spanChecked">*</p>
+                    </div>
+                    <a class="headerBut" id="CertificateButton">Certificate</a>
+                </div>
+
+                <p id="logginHello">Hello&nbsp;</p>
+                <div class="butLogOut">
+                    <a class="headerBut" id="LogOutButton"><img src="LogOut2.PNG"></a>
+                </div>
+
+            </div>
+
+            <hr>
+
+
+            <!-- Sign Up -->
+            <div class="form">
+                <form>
+                    <div class="formContainer">
+                        <h2 class="signup">Sign Up</h2>
+                        <div class="inputsContainer">
+
+
+                            <div class="inputArea">
+                                <div class="inputDiv">
+                                    <p class="aboveInputs">First Name</p>
+                                    <input type="text" class="inputs" id="prenom">
+                                </div>
+
+                                <div class="inputDiv">
+                                    <p class="aboveInputs">Last Name</p>
+                                    <input type="text" class="inputs" id="nom">
+                                </div>
+                            </div>
+
+                            <div class="inputArea">
+                                <div class="inputDiv">
+                                    <p class="aboveInputs">Date of Birth</p>
+                                    <input type="date" class="inputs" id="birth">
+                                </div>
+
+                                <div class="inputDiv">
+                                    <p class="aboveInputs">Email Adress</p>
+                                    <input type="" class="inputs" id="email">
+                                </div>
+                            </div>
+
+                            <div class="inputArea">
+                                <div class="inputDiv">
+                                    <p class="aboveInputs">Password</p>
+                                    <input type="password" class="inputs" id="password1">
+                                </div>
+
+                                <div class="inputDiv">
+                                    <p class="aboveInputs">Password</p>
+                                    <input type="password" class="inputs" id="password2">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="lastButton">
+                            <a id="buttonSous">Sign Up</a>
+                        </div>
+
+
+                    </div>
+                </form>
+
+                <!-- =========Login Area=========== -->
+
+                <div class="loginContainer">
+                    <h2 class="signup2">Login</h2>
+                    <div class="inputsContainer2">
+                        <div class="inputArea2">
+                            <div class="inputDiv2">
+                                <p class="aboveInputs2">Email</p>
+                                <input type="email" class="inputs2" id="emailLoginInput">
+                            </div>
+
+                            <div class="inputDiv2">
+                                <p class="aboveInputs2">Password</p>
+                                <input type="password" class="inputs2" id="passwordLoginInput">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lastButton2">
+                        <a id="buttonSous2">Login</a>
+                        <a id="forgetPassword">Forget Password</a>
+                    </div>
+                </div>
+                <!-- End -->
+
+                <!-- Password Recovery -->
+
+
+                <div class="PasswordContainer">
+                    <h2 class="signup3">Password Recovery</h2>
+                    <p id="recoverText">To recover your password please provide your email and your date of birth</p>
+                    <div class="inputsContainer3">
+
+                        <div class="inputArea">
+                            <div class="inputDiv">
+                                <p class="aboveInputs">Date of Birth</p>
+                                <input type="date" class="inputs" id="birthRecovery">
+                            </div>
+
+                            <div class="inputDiv">
+                                <p class="aboveInputs">Email Adress</p>
+                                <input type="" class="inputs" id="emailRecovery">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastButton2">
+                        <a id="buttonSous3">Reset Password</a>
+                        <a id="returnToLogin">Return to Login Page</a>
+                    </div>
+
+                </div>
+
+
+                <div class="PasswordContainer2">
+                    <h2 class="signup3">Password Recovery</h2>
+                    <p id="recoverText">You can now reset your Password</p>
+                    <div class="inputsContainer3">
+
+                        <div class="inputArea">
+                            <div class="inputDiv">
+                                <p class="aboveInputs">new Password</p>
+                                <input type="password" class="inputs" id="passwordNew">
+                            </div>
+        
+                            <div class="inputDiv">
+                                <p class="aboveInputs">Repeat Password</p>
+                                <input type="password" class="inputs" id="passwordNew2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lastButton2">
+                        <a id="buttonSous4">Reset it Now</a>
+                        <a id="returnToLogin">Return to Login Page</a>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <!--  -->
+
+
+                <ul id="ListCer">
+
+                </ul>
+
+                <div id="tableCont">
+                    <a class="PrintTable" id="printTable">Print</a>
+                    <table id="myTable">
+
+                        <tr id="table1">
+                            <th>Name</th>
+                        </tr>
+
+                        <tr id="table2">
+                            <th>Prenoms</th>
+                        </tr>
+
+                        <tr id="table3">
+                            <th>Email</th>
+                        </tr>
+                        <!--         
+                    <tr id="table4">
+                        <th>Date of Birth</th>
+                    </tr> -->
+
+                    </table>
+                </div>
+
+<script>
+    for (let i = 0; i < JSON.parse(localStorage.getItem('data')).length; i++) {
+        if(i%5==0)
+      console.log(JSON.parse(localStorage.getItem('data'))[i])
+    }
+</script>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <table id="tablePrenoms">
+        <th>Prenom</th>
+    </table> -->
+
+
+
+
+
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.js"></script>
+</body>
+
+</html>

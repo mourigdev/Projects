@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9fb;
+}
+
+.container {
+    display: flex;
+    margin: 0px 100px;
+    /* justify-content:space-between; */
+    background-color: #ffffff;
+    border-radius: 20px;
+    z-index: 10000;
+    box-shadow: 0px 6px 21px rgb(0 0 0 / 21%);
+    max-height: 100vh;
+}
+
+
+
+.left .imgLeft {
+    height: 100vh;
+    border-radius: 20px 0 0 20px;
+    animation: SousToUp 2.5s;
+
+}
+
+
+@keyframes SousToUp {
+    from {
+opacity: 0; height: 0;
+    }
+    to{
+        opacity: 100%; height:100vh
+    }
+}
+
+
+
+.right {
+    margin: 70px;
+}
+
+.header {
+    display: flex;
+}
+
+
+
+.but1 {
+    display: flex;
+    margin: 0 20px 0 0;
+}
+
+.but2 {
+    display: flex;
+    margin: 0 20px 0 0;
+}
+
+.but3 {
+    display: none;
+    margin: 0 20px 0 0;
+}
+
+.but4 {
+    display: none;
+    margin: 0 20px 0 0;
+}
+
+
+.butLogOut{
+    display: flex;
+    margin: 0 20px 0 0;
+}
+
+
+.headerBut {
+    color: #35376f;
+    text-decoration: none;
+    margin: auto 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.headerBut:hover{
+    transform: translateY(-4px);
+    color: #9ec4fb;
+}
+
+
+#logginHello{
+    color: #35376f;
+    display: none;
+    margin: auto 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.butLogOut{
+    display: none;
+}
+
+
+.checked1 {
+    width: 35px;
+    height: 35px;
+    background-color: #0c75ff;
+    border-radius: 4px;
+}
+
+.spanChecked {
+
+    margin: 10px 14px;
+    color: #d1e5ff;
+
+}
+
+.checked2 {
+    width: 35px;
+    height: 35px;
+    background-color: #f3f3f9;
+    border-radius: 4px;
+}
+
+
+.checked3 {
+    width: 35px;
+    height: 35px;
+    background-color: #f3f3f9;
+    border-radius: 4px;
+}
+
+.checked4 {
+    width: 35px;
+    height: 35px;
+    background-color: #f3f3f9;
+    border-radius: 4px;
+}
+
+
+hr {
+    border-width: 0.2px;
+    opacity: 0.2;
+    border-color: #dfdfe8;
+    margin-top: 32px;
+}
+
+
+.inputArea {
+    display: flex;
+}
+
+.inputs {
+    width: 230px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #dfdfe8;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.inputs:focus {
+    outline: solid #3c90ff 1px;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inputDiv {
+    margin: 0 30px 20px 0;
+}
+
+.aboveInputs {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #525383;
+    font-weight: 600;
+}
+
+
+#buttonSous {
+    text-decoration: none;
+    background-color: #0c75ff;
+    color: white;
+    width: 150px;
+    padding: 15px 23px;
+    border-radius: 5px;
+    /* width: 180px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.lastButton {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 30px 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: black;
+    display: table;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    text-align: center;
+} */
+.container2 {
+    border: 20px solid #f3f3f9;
+    width: 750px;
+    /* height: 563px; */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo {
+    color: #b9b6b6;
+}
+
+.marquee {
+    color: #0c75ff;
+    font-size: 48px;
+    margin: 20px;
+}
+
+.assignment {
+    margin: 20px;
+}
+
+.person {
+    border-bottom: 2px solid black;
+    font-size: 32px;
+    font-style: italic;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.reason {
+    margin: 20px;
+}
+
+.form {
+    height: 465px;
+    overflow-y: auto;
+
+    /* padding-right: 20px; */
+}
+
+
+
+
+li.cer {
+    margin-right: 20px;
+    margin-left: -33px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#printBut {
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #193660;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inputsContainer{
+    margin-left: 2px;
+}
+
+#tableCont{
+    display: none;
+    margin-top: 10px;
+}
+
+#myTable {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f9;
+    width: 600px;
+    margin-top: 30px;
+}
+
+#printTable {
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #193660;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+tbody {
+    display: flex;
+}
+
+
+
+
+th {
+    background-color: #f3f3f9;
+    display: block;
+    font-size: 29px;
+    padding: 0 22px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: #193660;
+}
+
+td {
+    display: block;
+    border: #193660 1px solid;
+    text-align: center;
+    /* font-size: 29px; */
+    padding: 10px 0;
+    background-color: white;
+}
+
+
+
+/* Login */
+
+
+
+.inputsContainer2{
+    margin-left: 2px;
+}
+
+.inputArea2 {
+    display: flex;
+}
+
+.inputDiv2 {
+    margin: 0 30px 20px 0;
+}
+
+.aboveInputs2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #525383;
+    font-weight: 600;
+}
+
+
+.inputs2 {
+    width: 230px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #dfdfe8;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.inputs2:focus {
+    outline: solid #3c90ff 1px;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.lastButton2 {
+    display: flex;
+    margin: 10px 30px 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#buttonSous2 {
+    text-decoration: none;
+    background-color: #193660;
+    color: white;
+    width: 150px;
+    padding: 15px 23px;
+    border-radius: 5px;
+    /* width: 180px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.loginContainer{
+    display:none;
+    margin-top: 100px;;
+}
+
+a#forgetPassword {
+    margin: auto;
+    cursor: pointer;
+    color: #807979;
+}
+
+a#forgetPassword:hover {
+
+    color: #000000;
+}
+
+
+/* Password Recovery */
+
+.PasswordContainer{
+    display:none;
+    margin-top: 70px;;
+}
+
+.inputsContainer3{
+    margin-left: 2px;
+}
+
+.inputArea3 {
+    display: flex;
+}
+
+.inputDiv3 {
+    margin: 0 30px 20px 0;
+}
+
+.aboveInputs3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #525383;
+    font-weight: 600;
+}
+
+a#buttonSous3 {
+    background-color: #193660;
+    color: #fff;
+    color: white;
+    width: 156px;
+    padding: 15px 23px;
+    border-radius: 5px;
+    /* width: 180px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+
+p#recoverText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #6f6f6f;
+    font-weight: 600;
+}
+
+a#returnToLogin {
+    margin: auto;
+    cursor: pointer;
+    color: #807979;
+}
+
+a#returnToLogin:hover {
+
+    color: #000000;
+}
+
+
+
+.PasswordContainer2{
+    display:none;
+    margin-top: 70px;;
+}
+
+
+a#buttonSous4 {
+    background-color: #193660;
+    color: #fff;
+    color: white;
+    width: 156px;
+    padding: 15px 23px;
+    border-radius: 5px;
+    /* width: 180px; */
+    text-align: center;
+    cursor: pointer;
+}
